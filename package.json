@@ -30,6 +30,7 @@
   "type": "module",
   "dependencies": {
     "@bytemd/plugin-gfm": "^1.10.13",
+    "@bytemd/plugin-mermaid": "^1.10.13",
     "@capacitor-community/electron": "^4.1.0",
     "@capacitor/android": "^3.4.1",
     "@capacitor/cli": "^3.4.1",

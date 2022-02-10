@@ -1,10 +1,13 @@
 <script lang="ts">
   import { Editor, Viewer } from 'bytemd';
   import gfm from '@bytemd/plugin-gfm';
+  import mermaid from '@bytemd/plugin-mermaid';
+  import 'bytemd/dist/index.min.css';
 
   let value: string;
   const plugins: any[] = [
     gfm(),
+    mermaid(),
     // Add more plugins here
   ];
 
