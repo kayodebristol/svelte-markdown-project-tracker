@@ -1,2 +1,21 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import { Editor, Viewer } from 'bytemd';
+  import gfm from '@bytemd/plugin-gfm';
+
+  let value: string;
+  const plugins: any[] = [
+    gfm(),
+    // Add more plugins here
+  ];
+
+  function handleChange(e) {
+    value = e.detail.value;
+  }
+</script>
+
+<template>
+
+  <Editor sanitize={null} placeholder={null}
+  editorConfig={null} locale={null} uploadImages={null}
+  overridePreview={null}  value={value} plugins={plugins} on:change={handleChange} />
+</template>

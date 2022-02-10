@@ -1,0 +1,15 @@
+{
+	"appId": "com.project.tracker.svelte",
+	"appName": "svelte-markdown-project-tracker",
+	"webDir": "build",
+	"bundledWebRuntime": true,
+	"electron": {
+		"customUrlScheme": "capacitor-electron",
+		"trayIconAndMenuEnabled": false,
+		"splashScreenEnabled": false,
+		"splashScreenImageName": "splash.png",
+		"hideMainWindowOnLaunch": false,
+		"deepLinkingEnabled": true,
+		"deepLinkingCustomProtocol": "mycapacitorapp"
+	}
+}
